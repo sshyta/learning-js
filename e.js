@@ -1,26 +1,24 @@
-function calculateAverageOneCoup (num_1, num_2) {
-    num_1 = +prompt
-    num_2 = +prompt
+let num_1 = Number(prompt())
+let num_2 = Number(prompt())
+let num_3 = Number(prompt())
+let num_4 = Number(prompt())
+
+function calculateAverage (num_1, num_2) {
     return ((num_1 + num_2)/2)
 }
 
-function calculateAverageThoCpou (num_3, num_4) {
-    num_3 = +prompt
-    num_4 = +prompt
-    return ((num_3 + num_4)/2)
-}
+let resultPartOne = calculateAverage(num_1, num_2);
+let resultPartTho = calculateAverage(num_3, num_4);
 
-function compareAverages (calculateAverageOneCoup, calculateAverageThoCpou) {
-    if (resultPartOne < resultPartTho) {
-        console.log("Среднее значение второго набора больше")
+function compareAverages (resultPartOne, resultPartTho) {
+    if (resultPartOne > resultPartTho) {
+        console.log ("Среднее значение первого набора больше");
     } 
-    else if (resultPartOne === resultPartTho) {
-        console.log("Средние значения наборов равны")
-    } 
-    else {
-        console.log("Среднее значение первого набора больше")
+    else if (resultPartTho > resultPartOne) {
+        console.log ("Среднее значение второго набора больше")
     }
+    else 
+        console.log ("Средние значения наборов равны")
 }
 
-calculateAverage();
-compareAverages();
+compareAverages(resultPartOne, resultPartTho);
