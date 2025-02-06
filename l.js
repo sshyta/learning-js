@@ -1,0 +1,1 @@
+let input = prompt(); if (input.length < 5) {console.log(input + "!");} else if (input.length > 5) {console.log(input + "?");}
