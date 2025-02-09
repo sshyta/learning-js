@@ -1,0 +1,1 @@
+let num = +prompt(); if (num > 0) { let result = Math.sqrt(num);  console.log(`Квадратный корень из ${num} равен ${result}`)} else if (num < 0) { let result = Math.sqrt(Math.abs(num)); console.log(`Квадратный корень из ${Math.abs(num)} равен ${Math.abs(result)}`)}
