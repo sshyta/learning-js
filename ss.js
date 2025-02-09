@@ -1,0 +1,1 @@
+let char = +prompt(); let result = ((Math.PI * (char ** 2)) ** 3); console.log(Math.round(result))
