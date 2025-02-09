@@ -7,7 +7,6 @@ if (month === 12 || month === 1 || month === 2) {
     if (temp == -25 || temp < -25) {
         console.log(season + " " + "(холодная зима)")
     }
-    
     else { 
         (temp != -25 || temp > - 25) 
         console.log(season)

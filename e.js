@@ -20,5 +20,4 @@ function compareAverages (resultPartOne, resultPartTho) {
     else 
         console.log ("Средние значения наборов равны")
 }
-
 compareAverages(resultPartOne, resultPartTho);
